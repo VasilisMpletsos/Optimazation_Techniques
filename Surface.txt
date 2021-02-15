@@ -1,0 +1,11 @@
+X=linspace(-10,10,201);
+Y=linspace(-10,10,201);
+for i=1:1:201
+for j=1:1:201
+F(i,j)=0.5*X(i)^2+0.5*Y(j)^2;
+end
+end
+surf(X,Y,F)
+xlabel('X')
+ylabel('Y')
+f=@(x)(-9.491221581*log(0.01/x))

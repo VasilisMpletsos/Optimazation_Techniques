@@ -1,0 +1,10 @@
+X=linspace(-2,2,201);
+Y=linspace(2,-2,201);
+for i=1:1:201
+for j=1:1:201
+F(i,j)=sin(X(j)+Y(i))*sin(X(j)^2);
+end
+end
+surf(X,Y,F)
+xlabel('X')
+ylabel('Y')
